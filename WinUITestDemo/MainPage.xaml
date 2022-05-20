@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="WinUITestDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <StackPanel Padding="20">
+        <Grid
+            Name="Root"
+            Width="100"
+            Height="100"
+            HorizontalAlignment="Left">
+            <muxc:ProgressRing x:Name="TestProgressRing" />
+        </Grid>
+        <Button Click="Button_Click">Reload ProgressRing</Button>
+    </StackPanel>
+</Page>
